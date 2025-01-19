@@ -30,11 +30,7 @@ function HappyValentinePageView() {
           className="d-flex justify-content-center mt-5 pt-5"
           style={{ width: "560px", height: "470px" }}
         >
-          <img
-            src="https://i.redd.it/nb0lmgrfrf821.png"
-            sizes="100%"
-            alt="angry-image"
-          />
+          <img src="assets/gru-gun.jpg" sizes="100%" alt="angry-image" />
         </Col>
       </Row>
       <Row>
