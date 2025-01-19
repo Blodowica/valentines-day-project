@@ -30,7 +30,7 @@ function DefaultValentinePageview() {
           className="d-flex justify-content-center mt-5 pt-5"
           style={{ width: "560px", height: "470px" }}
         >
-          <img src="/assets//shaq-shimmy.gif" sizes="100%" />
+          <img src="/assets//shaq-shimmy.gif" sizes="100%" alt="happy-image" />
         </Col>
       </Row>
       <Row>

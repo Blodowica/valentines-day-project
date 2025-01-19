@@ -23,6 +23,7 @@ function HomePageViewComponent() {
           <img
             src="/assets/logo.png"
             style={{ width: "345px", height: "330px" }}
+            alt="logo"
           />
         </Col>
       </Row>
