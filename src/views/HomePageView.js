@@ -16,6 +16,21 @@ function HomePageViewComponent() {
     console.log("clicked yes");
     navigate("/happy"); // Navigate to the '/happy' page when the button is clicked
   };
+
+  const customYesCursor = () => {
+    //chanbge the cursor to the image
+
+    document.getElementById("btn-yes").style.cursor =
+      "url('https://i.ibb.co/GcGJZ4q/Stich-mouse-icon-removebg-preview.png'), auto";
+  };
+
+  const customNoCursor = () => {
+    console.log("TRIGGRED NO FUNCTION");
+
+    document.getElementById("btn-no").style.cursor =
+      "url('https://i.ibb.co/Npmsmfj/Sadstich-removebg-preview.png'), auto";
+  };
+
   return (
     <Container fluid style={{ height: "100vh", backgroundColor: "#FF5656" }}>
       <Row className="pt-5">
@@ -42,11 +57,12 @@ function HomePageViewComponent() {
         {/* Buttons Section */}
         <Col className="d-flex justify-content-center mt-4 pt-4">
           <Button
+            id="btn-yes"
             onClick={() => handleButtonClick()}
-            // onMouseEnter={() => document.getElementsByClassName("custom-btn")}
-            // onMouseLeave={() => console.log("no longer hovering on yes")}
+            onMouseEnter={() => customYesCursor()}
+            onMouseLeave={() => console.log("no longer hovering on yes")}
             variant="light"
-            className="me-5 custom-btn"
+            className=" me-5 custom-btn "
             style={{
               width: "500px",
               height: "215PX",
@@ -63,7 +79,9 @@ function HomePageViewComponent() {
             </p>
           </Button>
           <Button
+            id="btn-no"
             variant="light"
+            onMouseEnter={() => customNoCursor()}
             onClick={() => setModalShow(true)}
             style={{ width: "150px", height: "75px" }}
           >

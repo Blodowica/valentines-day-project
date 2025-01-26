@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+.custom-cursor {
+  cursor: url("../public/assets/stich_mouse_icon.png") 0 0, auto;
+}
