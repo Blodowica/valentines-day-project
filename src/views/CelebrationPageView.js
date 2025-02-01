@@ -101,7 +101,6 @@ function HorizontalSlidingImage() {
               fontFamily: "Protest Guerrilla",
               fontWeight: "600",
               fontSize: "80px",
-              color: "blue",
             }}
           >
             Let’s Goooo! Now that it’s all planned lets party!!

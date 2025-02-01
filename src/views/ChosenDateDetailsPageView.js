@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
@@ -8,7 +8,6 @@ import Button from "react-bootstrap/esm/Button";
 import Form from "react-bootstrap/Form";
 import { useLocation, useNavigate } from "react-router";
 import { Alert } from "react-bootstrap";
-import Tooltip from "react-bootstrap/Tooltip";
 
 function ChosenDateDetailsPageView() {
   const location = useLocation();
@@ -148,10 +147,6 @@ function ChosenDateDetailsPageView() {
       </div>
     );
   };
-
-  function handlePopUp() {
-    if (id === "OtherDate") console.log(id);
-  }
 
   return (
     <Container
