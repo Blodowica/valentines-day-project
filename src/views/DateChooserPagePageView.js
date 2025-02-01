@@ -17,7 +17,7 @@ function DateChooserPageViewComponent() {
       boldDescription:
         "Imagine the soft glow of candlelight flickering across your table as you sip fine wine and share an intimate, multi-course meal.",
       description:
-        "The air is filled with the tantalizing aroma of delicious food, and the chemistry between you two is undeniable. The atmosphere is cozy, the conversation flows effortlessly, and every glance exchanged feels like an invitation to take the night to the next level.",
+        "The air is filled with the tantalizing aroma of delicious food, and the chemistry between us  is undeniable. The atmosphere is cozy, the conversation flows effortlessly, and every glance exchanged feels like an invitation to take the night to the next level.",
       url: "https://margauxsrestaurant.com/wp-content/uploads/hitesh-dewasi-5JwBbnyZzfc-unsplash-scaled.jpg",
     },
     {
@@ -26,7 +26,7 @@ function DateChooserPageViewComponent() {
       boldDescription:
         "Dim the lights, wrap yourselves in a blanket, and let the magic unfold on-screen.",
       description:
-        "Whether you're watching a passionate romance or a sultry thriller, movie night has never been so steamy. Get lost in the heat of the moment as you cuddle closer, your hearts beating in sync.",
+        "Whether you're watching a passionate romance or a sultry thriller, movie night has never been so romantic. Get lost in the heat of the moment as we cuddle closer, our hearts beating in sync.",
       url: "https://sm.askmen.com/askmen_in/article/h/how-to-cho/how-to-choose-a-date-night-movie_ff9d.jpg",
     },
     {
@@ -35,7 +35,7 @@ function DateChooserPageViewComponent() {
       boldDescription:
         "Sometimes the best way to spend an evening together is beneath the vast, starlit sky.",
       description:
-        "The world fades away as you lie side by side, surrounded by the twinkling stars above. Every touch feels electrified, and there's something so intimate about sharing the quiet of the night with someone special.",
+        "The world fades away as we lie side by side, surrounded by the twinkling stars above. Every touch feels electrified, and there's something so intimate about sharing the quiet of the night with someone special.",
       url: "https://dateboxclub.com/cdn/shop/articles/StarGazing2.jpg?v=1706142251",
     },
     {
@@ -44,7 +44,7 @@ function DateChooserPageViewComponent() {
       boldDescription:
         "Didn’t like any of the options? Or maybe you’ve got an even better idea in mind, Babes?",
       description:
-        "If you’re looking for something a little different, the Mystery Date is for your recommendations. It’s all about breaking away from the usual and letting the night unfold however it feels right.",
+        "If you’re looking for something a little different, the Mystery Date is basically your recommendations. It’s all about breaking away from the usual and letting the night unfold however it feels right.",
       url: "https://media.istockphoto.com/id/1302846377/vector/speech-bubble-with-question-mark-vector-illustration.jpg?s=612x612&w=0&k=20&c=IjtXw2DACsBELihPaovn9XUXcIWwjB8GP1D8EUC2QlA=",
     },
   ];
@@ -90,7 +90,7 @@ function DateChooserPageViewComponent() {
                     }}
                   />
                   <Card.Body
-                    className="d-flex flex-column"
+                    className="d-flex flex-column align-items-center"
                     style={{ flexGrow: 1, maxWidth: "400px", margin: "0 auto" }}
                   >
                     <Card.Title

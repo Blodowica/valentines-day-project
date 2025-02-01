@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* Ensure the container takes up the full screen */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Animation for moving left and right */
+@keyframes moveLeftRight {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 80vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* Animation for spinning the image */
+@keyframes spin {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+/* Animation for moving diagonally */
+@keyframes moveDiagonal {
+  0% {
+    left: 0;
+    top: 50%;
+  }
+  50% {
+    left: 80vw;
+    top: 40%;
+  }
+  100% {
+    left: 0;
+    top: 50%;
+  }
+}

@@ -10,6 +10,7 @@ import NotHappyValentinePageView from "./views/NotHappyValetinePageView";
 import HomePageViewComponent from "./views/HomePageView";
 import DateChooserPageViewComponent from "./views/DateChooserPagePageView";
 import ChosenDateDetaulsPageView from "./views/ChosenDateDetailsPageView";
+import CelebrationPageView from "./views/CelebrationPageView";
 //import HomePageViewComponent from "./views/HomePageView";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/mad" element={<NotHappyValentinePageView />} />
         <Route path="/choose" element={<DateChooserPageViewComponent />} />
         <Route path="/detailsDate" element={<ChosenDateDetaulsPageView />} />
+        <Route path="/yay" element={<CelebrationPageView />} />
         <Route path="*" element={<h1>This page does not exist</h1>} />
       </>
     )
