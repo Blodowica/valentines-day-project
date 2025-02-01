@@ -3,9 +3,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/esm/Button";
+import { useNavigate } from "react-router";
 
 function DefaultValentinePageview() {
   const audioRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (audioRef.current) {
@@ -47,8 +50,24 @@ function DefaultValentinePageview() {
           <h2
             style={{ fontFamily: "Leckerli One", fontSize: 50, color: "white" }}
           >
-            Pick you up Friday at 6Pm! 😉
+            See you on valentine's day after 6Pm! 😉
           </h2>
+        </Col>
+      </Row>
+      <Row>
+        <Col className="d-flex justify-content-center mt-4  pt-2">
+          <Button
+            variant="light"
+            onClick={() => navigate("/choose")}
+            style={{
+              width: "30%",
+              fontFamily: "Leckerli One",
+              fontSize: 25,
+              color: "black",
+            }}
+          >
+            Let's Plan the date!
+          </Button>
         </Col>
       </Row>
     </Container>

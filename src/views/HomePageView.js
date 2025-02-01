@@ -18,17 +18,16 @@ function HomePageViewComponent() {
   };
 
   const customYesCursor = () => {
-    //chanbge the cursor to the image
-
+    // Change the cursor to the image with specified size
     document.getElementById("btn-yes").style.cursor =
-      "url('https://i.ibb.co/GcGJZ4q/Stich-mouse-icon-removebg-preview.png'), auto";
+      "url('https://i.ibb.co/GcGJZ4q/Stich-mouse-icon-removebg-preview.png') 0 0, auto";
   };
 
   const customNoCursor = () => {
     console.log("TRIGGRED NO FUNCTION");
 
     document.getElementById("btn-no").style.cursor =
-      "url('https://i.ibb.co/Npmsmfj/Sadstich-removebg-preview.png'), auto";
+      "url('https://i.ibb.co/Npmsmfj/Sadstich-removebg-preview.png') 0 0, auto";
   };
 
   return (
