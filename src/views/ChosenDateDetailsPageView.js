@@ -116,14 +116,16 @@ function ChosenDateDetailsPageView() {
   // Dynamic wine image based on `id`
   const getWineImage = (id) => {
     switch (id) {
-      case "movie":
-      case "stargazing":
-      case "other":
-        return "https://i.ibb.co/Npmsmfj/Sadstich-removebg-preview.png"; // Placeholder for non-restaurant dates
-      case "restaurant":
+      case "MovieDate":
+        return "https://i.ibb.co/pjr5MB6h/Wine-Glasses.png";
+      case "StargazingDate":
+        return "https://i.ibb.co/Kx2k8nWk/Raining-Love.png";
+      case "OtherDate":
+        return "https://i.ibb.co/Wpth7Mbn/Heart-Balloon.png"; // Placeholder for non-restaurant dates
+      case "DinerDate":
         return "https://i.ibb.co/9kCKrHpX/Wine.png"; // Wine image for restaurant
       default:
-        return "https://i.ibb.co/Npmsmfj/Sadstich-removebg-preview.png"; // Default placeholder
+        return "https://i.ibb.co/Wpth7Mbn/Heart-Balloon.png"; // Default placeholder
     }
   };
 
@@ -166,11 +168,10 @@ function ChosenDateDetailsPageView() {
               </div>
               <div>❤️ Brandon & Christel - 14-11-2025 ❤️</div>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                {/* Dynamic Wine Image */}
                 <img
                   style={{ maxWidth: "110px" }}
                   src={getWineImage(id)}
-                  alt="wine image"
+                  alt="little logo"
                 />
               </div>
             </Card.Body>
