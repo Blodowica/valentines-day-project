@@ -49,7 +49,7 @@ function ChosenDateDetailsPageView() {
   const fancyFontStyle = {
     fontFamily: "Leckerli One",
     color: "white",
-    fontSize: 25,
+    fontSize: 35,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -57,7 +57,7 @@ function ChosenDateDetailsPageView() {
 
   const basicFonty = {
     fontFamily: "Leckerli One",
-    fontSize: 10,
+    fontSize: 25,
     color: "black",
     maxWidth: "100%",
     display: "flex",
