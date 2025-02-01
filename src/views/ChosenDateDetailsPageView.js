@@ -40,6 +40,13 @@ function ChosenDateDetailsPageView() {
     }
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Prevent form submission
+      handleButtonClick(); // Trigger the same function as the button click
+    }
+  };
+
   const images = Array.from(
     { length: 65 },
     (_, i) =>
@@ -123,6 +130,7 @@ function ChosenDateDetailsPageView() {
                   maxLength={35}
                   value={dateIdea}
                   onChange={(e) => setDateIdea(e.target.value)}
+                  onKeyDown={handleKeyPress}
                 />
               </Form.Group>
             </Form>
