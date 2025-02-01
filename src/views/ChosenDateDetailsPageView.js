@@ -25,15 +25,14 @@ function ChosenDateDetailsPageView() {
   // Custom Google Font for fancy text
   const fancyFontStyle = {
     fontFamily: "Leckerli One",
-    fontSize: 30,
-    color: "black",
+    fontSize: 40,
     color: "white",
     display: "flex",
     justifyContent: "center",
   };
   const basicFonty = {
     fontFamily: "Leckerli One",
-    fontSize: 25,
+    fontSize: 30,
     color: "black",
     maxWidth: "100%",
     display: "flex",
