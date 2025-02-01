@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2e9af1e3-b944-4229-b658-d1de8817adff/deploy-status)](https://app.netlify.com/sites/christel-valentines-day/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
