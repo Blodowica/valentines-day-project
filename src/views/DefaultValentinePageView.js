@@ -2,13 +2,17 @@ import React, { useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/esm/Button";
+import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function DefaultValentinePageview() {
   const audioRef = useRef(null);
   const navigate = useNavigate();
+
+  const fontStyle = {
+    fontFamily: "Leckerli One, cursive",
+  };
 
   useEffect(() => {
     if (audioRef.current) {
@@ -16,67 +20,58 @@ function DefaultValentinePageview() {
       audioRef.current.volume = 0.1;
     }
   }, []);
+
   return (
-    <Container fluid style={{ height: "100vh", backgroundColor: "#F591A7" }}>
+    <Container
+      fluid
+      className="vh-100  d-flex flex-column justify-content-center"
+      style={{ backgroundColor: "#F591A7" }}
+    >
       {/* Audio Tag */}
       <audio ref={audioRef}>
-        <source
-          src="/assets/happy-background-sound.mp3" // Path to the audio file in the public folder
-          type="audio/mp3"
-        />
+        <source src="/assets/happy-background-sound.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
 
-      <Row>
-        <Col
-          lg={12}
-          className="d-flex justify-content-center mt-5 pt-5"
-          style={{ width: "100%", height: "100%" }}
-        >
-          <img src="/assets//shaq-shimmy.gif" sizes="100%" alt="happy-image" />
+      {/* GIF Image */}
+      <Row className="justify-content-center mb-4">
+        <Col xs={12} className="text-center">
+          <img
+            src="/assets/shaq-shimmy.gif"
+            className="img-fluid"
+            alt="happy-image"
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
         </Col>
       </Row>
-      <Row>
-        <Col className="d-flex justify-content-center pt-5 mt-2">
-          <h1
-            style={{
-              fontFamily: "Leckerli One",
-              fontSize: "7vh",
-              color: "white",
-              textAlign: "center",
-            }}
-          >
+
+      {/* Text Messages */}
+      <Row className="justify-content-center text-center mb-3">
+        <Col xs={12}>
+          <h1 className="text-white fw-bold display-4" style={fontStyle}>
             Happy to hear that lover ❤️
           </h1>
         </Col>
       </Row>
-      <Row>
-        <Col className="d-flex justify-content-center">
-          <h2
-            style={{
-              fontFamily: "Leckerli One",
-              fontSize: 50,
-              color: "black",
-              textAlign: "center",
-            }}
-          >
-            See you on valentine's day after 6Pm! 😉
+
+      <Row className="justify-content-center text-center mb-4">
+        <Col xs={12}>
+          <h2 className="text-white fw-bold display-6" style={fontStyle}>
+            See you on Valentine’s Day after 6 PM! 😉
           </h2>
         </Col>
       </Row>
-      <Row>
-        <Col className="d-flex justify-content-center mt-4  pt-2">
+
+      {/* Button */}
+      <Row className="justify-content-center">
+        <Col xs={10} sm={8} md={6} lg={4} className="text-center">
           <Button
             variant="light"
             onClick={() => navigate("/choose")}
-            style={{
-              width: "60%",
-              fontFamily: "Leckerli One",
-              fontSize: 25,
-              color: "black",
-            }}
+            className="w-100 py-3"
+            style={{ fontSize: "1.5rem", ...fontStyle }}
           >
-            Let's Plan the date!
+            Let's Plan the Date!
           </Button>
         </Col>
       </Row>
