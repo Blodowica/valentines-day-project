@@ -10,6 +10,9 @@ function NotHappyValentinePageView() {
   const audioRef = useRef(null);
 
   const navigate = useNavigate();
+  const fontStyle = {
+    fontFamily: "Leckerli One, cursive",
+  };
 
   useEffect(() => {
     if (audioRef.current) {
@@ -28,31 +31,31 @@ function NotHappyValentinePageView() {
         Your browser does not support the audio element.
       </audio>
 
-      <Row>
-        <Col
-          xl
-          className="d-flex justify-content-center mt-5 pt-5"
-          style={{ width: "560px", height: "470px" }}
-        >
-          <img src="assets/gru-gun.jpg" sizes="100%" alt="angry-image" />
+      <Row className="justify-content-center ">
+        <Col xs={12} className="text-center" style={{ maxHeight: "50vh" }}>
+          <img
+            src="/assets/gru-gun.jpg"
+            className="img-fluid"
+            alt="happy-image"
+            style={{ maxHeight: "90%", width: "auto", height: "100%" }}
+          />
         </Col>
       </Row>
       <Row>
         <Col className="d-flex justify-content-center pt-5 mt-2">
-          <h1
-            style={{ fontFamily: "Leckerli One", fontSize: 80, color: "white" }}
-          >
+          <h1 style={{ fontFamily: "Leckerli One", color: "white" }}>
             This is no longer a question
           </h1>
         </Col>
       </Row>
       <Row>
         <Col className="d-flex justify-content-center">
-          <h2
-            style={{ fontFamily: "Leckerli One", fontSize: 50, color: "white" }}
+          <h1
+            className="display-4 fw-bold"
+            style={{ color: "black", textAlign: "center", ...fontStyle }}
           >
             I better see you on the 14TH after 6Pm! 😤💢
-          </h2>
+          </h1>
         </Col>
       </Row>
       <Row>
@@ -66,7 +69,6 @@ function NotHappyValentinePageView() {
 
               outlineColor: "black",
               fontFamily: "Leckerli One",
-              fontSize: 25,
               color: "black",
             }}
           >

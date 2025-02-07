@@ -40,7 +40,7 @@ function DefaultValentinePageview() {
             src="/assets/shaq-shimmy.gif"
             className="img-fluid"
             alt="happy-image"
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{ minWidth: "25%", height: "auto" }}
           />
         </Col>
       </Row>
@@ -56,9 +56,9 @@ function DefaultValentinePageview() {
 
       <Row className="justify-content-center text-center mb-4">
         <Col xs={12}>
-          <h2 className="text-white fw-bold display-6" style={fontStyle}>
+          <h1 className=" display-4 fw-bold" style={fontStyle}>
             See you on Valentine’s Day after 6 PM! 😉
-          </h2>
+          </h1>
         </Col>
       </Row>
 
