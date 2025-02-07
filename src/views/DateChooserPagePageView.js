@@ -58,7 +58,12 @@ function DateChooserPageViewComponent() {
       {/* Full-screen Container */}
       <Container
         fluid
-        style={{ backgroundColor: "#FF5656", minHeight: "100vh", padding: 0 }}
+        style={{
+          backgroundColor: "#FF5656",
+          padding: 0,
+          height: "100%",
+          overflow: "auto",
+        }}
       >
         {/* Navbar */}
         <ChooseDateNavBarComponent />
