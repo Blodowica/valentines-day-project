@@ -29,9 +29,9 @@ function DefaultValentinePageview() {
 
       <Row>
         <Col
-          xl
+          lg={12}
           className="d-flex justify-content-center mt-5 pt-5"
-          style={{ width: "560px", height: "470px" }}
+          style={{ width: "100%", height: "100%" }}
         >
           <img src="/assets//shaq-shimmy.gif" sizes="100%" alt="happy-image" />
         </Col>
@@ -39,7 +39,12 @@ function DefaultValentinePageview() {
       <Row>
         <Col className="d-flex justify-content-center pt-5 mt-2">
           <h1
-            style={{ fontFamily: "Leckerli One", fontSize: 80, color: "white" }}
+            style={{
+              fontFamily: "Leckerli One",
+              fontSize: "7vh",
+              color: "white",
+              textAlign: "center",
+            }}
           >
             Happy to hear that lover ❤️
           </h1>
@@ -48,7 +53,12 @@ function DefaultValentinePageview() {
       <Row>
         <Col className="d-flex justify-content-center">
           <h2
-            style={{ fontFamily: "Leckerli One", fontSize: 50, color: "white" }}
+            style={{
+              fontFamily: "Leckerli One",
+              fontSize: 50,
+              color: "black",
+              textAlign: "center",
+            }}
           >
             See you on valentine's day after 6Pm! 😉
           </h2>
@@ -60,7 +70,7 @@ function DefaultValentinePageview() {
             variant="light"
             onClick={() => navigate("/choose")}
             style={{
-              width: "30%",
+              width: "60%",
               fontFamily: "Leckerli One",
               fontSize: 25,
               color: "black",

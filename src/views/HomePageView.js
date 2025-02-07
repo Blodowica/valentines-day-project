@@ -36,7 +36,7 @@ function HomePageViewComponent() {
         <Col xs={12} className=" pt-5 d-flex justify-content-center">
           <img
             src="/assets/logo.png"
-            style={{ width: "345px", height: "330px" }}
+            style={{ width: "auto", height: "100%" }}
             alt="logo"
           />
         </Col>
@@ -44,7 +44,11 @@ function HomePageViewComponent() {
       <Row>
         <Col xs={12} className="mt-5 pt-5 d-flex justify-content-center">
           <h1
-            style={{ fontFamily: "Leckerli One", fontSize: 80, color: "white" }}
+            style={{
+              fontFamily: "Leckerli One",
+              fontSize: "5vh",
+              color: "white",
+            }}
           >
             {" "}
             Will you be my valentine?
