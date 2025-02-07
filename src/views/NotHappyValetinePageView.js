@@ -51,7 +51,7 @@ function NotHappyValentinePageView() {
       <Row>
         <Col className="d-flex justify-content-center">
           <h1
-            className="display-4 fw-bold"
+            className="display-6 fw-bold"
             style={{ color: "black", textAlign: "center", ...fontStyle }}
           >
             I better see you on the 14TH after 6Pm! 😤💢
