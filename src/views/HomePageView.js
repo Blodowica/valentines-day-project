@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -8,104 +7,93 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ConfirmitionModalComponent from "./ConfirmationModelComponent";
 import { useNavigate } from "react-router";
 
+// Import Google Font
+const fontStyle = {
+  fontFamily: "Leckerli One, cursive",
+};
+
 function HomePageViewComponent() {
   const [modalShow, setModalShow] = useState(false);
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
     console.log("clicked yes");
-    navigate("/happy"); // Navigate to the '/happy' page when the button is clicked
+    navigate("/happy");
   };
 
   const customYesCursor = () => {
-    // Change the cursor to the image with specified size
     document.getElementById("btn-yes").style.cursor =
       "url('https://i.ibb.co/GcGJZ4q/Stich-mouse-icon-removebg-preview.png') 0 0, auto";
   };
 
   const customNoCursor = () => {
     console.log("TRIGGRED NO FUNCTION");
-
     document.getElementById("btn-no").style.cursor =
       "url('https://i.ibb.co/Npmsmfj/Sadstich-removebg-preview.png') 0 0, auto";
   };
 
   return (
-    <Container fluid style={{ height: "100vh", backgroundColor: "#FF5656" }}>
-      <Row className="pt-5">
-        <Col xs={12} className=" pt-5 d-flex justify-content-center">
+    <Container
+      fluid
+      className="vh-100 bg-danger text-center d-flex flex-column justify-content-center"
+    >
+      {/* Logo */}
+      <Row className="justify-content-center mb-4">
+        <Col xs={12}>
           <img
             src="/assets/logo.png"
-            style={{ width: "auto", height: "100%" }}
+            className="img-fluid"
+            style={{ maxWidth: "80%", height: "auto" }}
             alt="logo"
           />
         </Col>
       </Row>
-      <Row>
-        <Col xs={12} className="mt-5 pt-5 d-flex justify-content-center">
-          <h1
-            style={{
-              fontFamily: "Leckerli One",
-              fontSize: "5vh",
-              color: "white",
-            }}
-          >
-            {" "}
+
+      {/* Heading */}
+      <Row className="justify-content-center mb-4">
+        <Col xs={12}>
+          <h1 className="text-white display-4 fw-bold" style={fontStyle}>
             Will you be my valentine?
           </h1>
         </Col>
       </Row>
 
-      <Row>
-        {/* Buttons Section */}
-        <Col className="d-flex justify-content-center mt-4 pt-4">
+      {/* Buttons - Yes and No side by side */}
+      <Row className="justify-content-center">
+        {/* Yes Button - Larger Height */}
+        <Col xs={8} sm={6} md={5} lg={4} className="text-end">
           <Button
             id="btn-yes"
-            onClick={() => handleButtonClick()}
-            onMouseEnter={() => customYesCursor()}
-            onMouseLeave={() => console.log("no longer hovering on yes")}
+            onClick={handleButtonClick}
+            onMouseEnter={customYesCursor}
             variant="light"
-            className=" me-5 custom-btn "
-            style={{
-              width: "500px",
-              height: "215PX",
-            }}
+            className="w-100 py-4"
+            style={{ height: "215px", fontSize: "60px", ...fontStyle }}
           >
-            <p
-              style={{
-                fontFamily: "Leckerli One",
-                fontSize: 60,
-                color: "black",
-              }}
-            >
-              Yes
-            </p>
+            Yes
           </Button>
+        </Col>
+
+        {/* No Button - Smaller */}
+        <Col xs={4} sm={3} md={2} lg={2} className="text-start">
           <Button
             id="btn-no"
             variant="light"
-            onMouseEnter={() => customNoCursor()}
+            onMouseEnter={customNoCursor}
             onClick={() => setModalShow(true)}
-            style={{ width: "150px", height: "75px" }}
+            className="w-100 py-2"
+            style={{ height: "75px", fontSize: "25px", ...fontStyle }}
           >
-            <p
-              style={{
-                fontFamily: "Leckerli One",
-                fontSize: 25,
-                color: "black",
-              }}
-            >
-              No
-            </p>
+            No
           </Button>
         </Col>
       </Row>
-      <>
-        <ConfirmitionModalComponent
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        />
-      </>
+
+      {/* Modal */}
+      <ConfirmitionModalComponent
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
     </Container>
   );
 }
