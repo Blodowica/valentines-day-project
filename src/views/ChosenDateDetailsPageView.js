@@ -61,6 +61,9 @@ function ChosenDateDetailsPageView() {
     justifyContent: "center",
     alignItems: "center",
   };
+  const fontStyle = {
+    fontFamily: "Leckerli One, cursive",
+  };
 
   const basicFonty = {
     fontFamily: "Leckerli One",
@@ -90,18 +93,21 @@ function ChosenDateDetailsPageView() {
     if (id === "OtherDate") {
       return (
         <>
-          <div className=" mt-0 pt-0">
-            <p style={basicFontyother}>
+          <div className=" mt-0 pt-3">
+            <h1
+              className=" display-6 "
+              style={{ color: "white", fontSize: "1.3rem", ...fontStyle }}
+            >
               Whatever we decide to do, babes, I know it’s going to be perfect.
               💫 Whether we go for a walk, try something new, or just enjoy each
               other’s company, I’ll be so happy to spend the time with you.
               Let’s make it a day to remember, amor! 😘
-            </p>
+            </h1>
           </div>
           <div style={{ width: "100%" }}>
             <Form className="mt-1">
               <Form.Group
-                className="mb-4 pb-4"
+                className="mb-3 pb-3"
                 controlId="DateIdeaInput"
                 style={{ justifyContent: "center", alignItems: "center" }}
               >
@@ -261,13 +267,8 @@ function ChosenDateDetailsPageView() {
               </Col> */}
               {/* BUTTON IT'S A DATE  */}
 
-              <Col>
-                <Button
-                  style={{ height: "100%" }}
-                  onClick={handleButtonClick}
-                  variant="light"
-                  size="lg"
-                >
+              <Col xs={12} className="mb-5 pb-5">
+                <Button onClick={handleButtonClick} variant="light" size="lg">
                   {buttonText}
                 </Button>
               </Col>

@@ -93,7 +93,7 @@ function HorizontalSlidingImage() {
           <h1
             className="justify-content-center d-flex"
             style={{
-              color: "b2ffff",
+              color: "#C4C4C4",
               position: "absolute",
               top: "10%",
               width: "100%",
