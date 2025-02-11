@@ -16,8 +16,14 @@ function DateChooserPageViewComponent() {
       title: "Romantic Dinner Date",
       boldDescription:
         "Imagine the soft glow of candlelight flickering across your table as you sip fine wine and share an intimate, multi-course meal.",
+      romanticMessage:
+        "The slowest fermenting beer in the world takes exactly 930 days to complete its brewing cycle— in that time, we still haven't had a drink together.\n\n" +
+        "A pizza in a wood-fired oven cooks in 90 seconds. In 930 days, you could bake about 890,000 pizzas if you never stopped.\n\n" +
+        "A cup of coffee brews in 5 minutes. You could make 267,600 cups of coffee in 930 days.\n\n" +
+        "A study testing how long a McDonald's burger remains visually unchanged lasted 930 days.\n\n" +
+        "The longest waiting list for a dinner reservation at a fine-dining restaurant was 930 days—it was a 3 Michelin-star restaurant in Tokyo.",
       description:
-        "The air is filled with the tantalizing aroma of delicious food, and the chemistry between us  is undeniable. The atmosphere is cozy, the conversation flows effortlessly, and every glance exchanged feels like an invitation to take the night to the next level.",
+        "The air is filled with the tantalizing aroma of delicious food, and the chemistry between us is undeniable. The atmosphere is cozy, the conversation flows effortlessly, and every glance exchanged feels like an invitation to take the night to the next level.",
       url: "https://margauxsrestaurant.com/wp-content/uploads/hitesh-dewasi-5JwBbnyZzfc-unsplash-scaled.jpg",
     },
     {
@@ -25,6 +31,12 @@ function DateChooserPageViewComponent() {
       title: "Movie Night",
       boldDescription:
         "Dim the lights, wrap yourselves in a blanket, and let the magic unfold on-screen.",
+      romanticMessage:
+        "An average movie is about 120 minutes long. In 930 days, we could have watched over 11,160 movies together.\n\n" +
+        "The longest movie ever made is 85 hours long—thankfully, our relationship has lasted way longer!\n\n" +
+        "If we held hands through every movie, that’s 22,320 minutes of holding hands—basically a full-time job!\n\n" +
+        "Popcorn takes only 2 minutes to pop. In 930 days, we could pop 669,600 bags of popcorn (and still argue over who gets the last piece).\n\n" +
+        "They say a good movie makes you laugh, cry, and fall in love. Lucky for us, we do that even without the movie!",
       description:
         "Whether you're watching a passionate romance or a sultry thriller, movie night has never been so romantic. Get lost in the heat of the moment as we cuddle closer, our hearts beating in sync.",
       url: "https://sm.askmen.com/askmen_in/article/h/how-to-cho/how-to-choose-a-date-night-movie_ff9d.jpg",
@@ -34,6 +46,11 @@ function DateChooserPageViewComponent() {
       title: "Star Gazing Date",
       boldDescription:
         "Sometimes the best way to spend an evening together is beneath the vast, starlit sky.",
+      romanticMessage:
+        "The planet Venus rotates extremely slowly, taking about 243 Earth days to complete one rotation. That’s about 930 Earth days for roughly 4 Venus days.\n\n" +
+        "A trip to Mars takes about 210 days—so in 930 days, you could fly to Mars and back more than twice.\n\n" +
+        "The Apollo 11 mission took only 8 days—meaning you could complete 116 Moon missions in 930 days.\n\n" +
+        "In space, astronauts grow taller due to the lack of gravity compressing their spines. On average, astronauts can grow by 2 inches in just a few months. Over 930 days, that would allow them to grow more than 6 inches taller!",
       description:
         "The world fades away as we lie side by side, surrounded by the twinkling stars above. Every touch feels electrified, and there's something so intimate about sharing the quiet of the night with someone special.",
       url: "https://dateboxclub.com/cdn/shop/articles/StarGazing2.jpg?v=1706142251",
@@ -43,6 +60,11 @@ function DateChooserPageViewComponent() {
       title: "Other Date",
       boldDescription:
         "Didn’t like any of the options? Or maybe you’ve got an even better idea in mind, Babes?",
+      romanticMessage:
+        "The average person sends around 35 texts a day to a partner in a relationship. In 930 days, you’d exchange around 32,550 texts! (Or in your case, 500 ❤️🙂).\n\n" +
+        "It takes about 60 days to form a new habit. In 930 days, you could form 15 new habits.\n\n" +
+        "The human brain is capable of creating 70,000 thoughts per day. In 930 days, you could generate a freakishly high 65 million thoughts, possibly making you the creator of your own universe of ideas or in my case, around 2 or 3 actual good gift ideas!\n\n" +
+        "The average human orgasm lasts about 20 seconds. If you had an orgasm every day for 930 days, you’d spend 3 hours having orgasms—enough to make it a marathon! 😏",
       description:
         "If you’re looking for something a little different, the Mystery Date is basically your recommendations. It’s all about breaking away from the usual and letting the night unfold however it feels right.",
       url: "https://media.istockphoto.com/id/1302846377/vector/speech-bubble-with-question-mark-vector-illustration.jpg?s=612x612&w=0&k=20&c=IjtXw2DACsBELihPaovn9XUXcIWwjB8GP1D8EUC2QlA=",

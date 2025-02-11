@@ -11,7 +11,7 @@ import { Alert } from "react-bootstrap";
 
 function ChosenDateDetailsPageView() {
   const location = useLocation();
-  const { id, url, title, boldDescription, description } =
+  const { id, url, title, boldDescription, description, romanticMessage } =
     location.state.date || {};
 
   const navigate = useNavigate();
@@ -166,18 +166,22 @@ function ChosenDateDetailsPageView() {
     <Container
       fluid
       style={{
-        backgroundColor: "#F591A7",
+        backgroundColor: "#FF5656",
         height: "100vh",
         width: "100vw",
         padding: 0,
         overflowX: "hidden",
       }}
     >
-      <Row className="m-0 h-100">
+      <Row className="m-0 ">
         <Col lg={3} md={4} sm={5} xs={12} className="p-0 d-flex">
           <Card
             className="w-100 d-flex flex-column"
-            style={{ height: "100vh", backgroundColor: "white" }}
+            style={{
+              height: "100vh",
+              backgroundColor: "white",
+              maxHeight: "100vh",
+            }}
           >
             <Card.Img
               className="p-2"
@@ -188,19 +192,23 @@ function ChosenDateDetailsPageView() {
             <Card.Body className="text-center d-flex flex-column justify-content-between">
               <div>
                 <Card.Title style={{ fontWeight: "bold" }}>{title}</Card.Title>
-                <Card.Text style={{ fontSize: "1rem", color: "#555" }}>
-                  <strong>{boldDescription}</strong>
-                  <br />
-                  {description}
+                <Card.Text
+                  style={{
+                    fontSize: "1rem",
+                    color: "#555",
+                    whiteSpace: "pre-line",
+                  }}
+                >
+                  <strong>{romanticMessage}</strong>
                 </Card.Text>
-              </div>
-              <div>❤️ Brandon & Christel - 14-11-2025 ❤️</div>
-              <div style={{ display: "flex", justifyContent: "center" }}>
-                <img
-                  style={{ maxWidth: "110px" }}
-                  src="https://i.ibb.co/Wpth7Mbn/Heart-Balloon.png"
-                  alt="little logo"
-                />
+                <div>❤️ Brandon & Christel - 14-11-2025 ❤️</div>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <img
+                    style={{ maxWidth: "110px" }}
+                    src="https://i.ibb.co/Wpth7Mbn/Heart-Balloon.png"
+                    alt="little logo"
+                  />
+                </div>
               </div>
             </Card.Body>
           </Card>
