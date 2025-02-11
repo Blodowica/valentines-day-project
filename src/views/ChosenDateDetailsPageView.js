@@ -95,8 +95,8 @@ function ChosenDateDetailsPageView() {
         <>
           <div className=" mt-0 pt-3">
             <h1
-              className=" display-6 "
-              style={{ color: "white", fontSize: "1.3rem", ...fontStyle }}
+              className=" display-6 fs-1 fs-md-2 fs-lg-3 "
+              style={{ color: "white", fontSize: "1.3rem", ...basicFontyother }}
             >
               Whatever we decide to do, babes, I know it’s going to be perfect.
               💫 Whether we go for a walk, try something new, or just enjoy each
@@ -264,15 +264,6 @@ function ChosenDateDetailsPageView() {
               </Alert>
             )}
             <Row>
-              {/* <Col>
-                <Button
-                  onClick={() => navigate("/choose")}
-                  variant="warning"
-                  size="lg"
-                >
-                  I changed my mind
-                </Button>
-              </Col> */}
               {/* BUTTON IT'S A DATE  */}
 
               <Col xs={12} className="mb-5 pb-5">
