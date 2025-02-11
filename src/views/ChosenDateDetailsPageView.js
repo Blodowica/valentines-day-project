@@ -11,7 +11,7 @@ import { Alert } from "react-bootstrap";
 
 function ChosenDateDetailsPageView() {
   const location = useLocation();
-  const { id, url, title, boldDescription, description, romanticMessage } =
+  const { id, url, title, boldDescription, romanticMessage } =
     location.state.date || {};
 
   const navigate = useNavigate();
@@ -60,9 +60,6 @@ function ChosenDateDetailsPageView() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-  };
-  const fontStyle = {
-    fontFamily: "Leckerli One, cursive",
   };
 
   const basicFonty = {
