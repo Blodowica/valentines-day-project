@@ -156,7 +156,9 @@ function ChosenDateDetailsPageView() {
     // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////////////////////////////////////\\\\\\The message explaing the date /////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     return (
       <div className="p-3 m-2">
-        <p style={basicFonty}>{description}</p>
+        <p className="text-sm-start" style={basicFonty}>
+          {boldDescription}
+        </p>
         <p style={fancyFontStyle}>I look forward to our date! 💖</p>
       </div>
     );
@@ -199,7 +201,22 @@ function ChosenDateDetailsPageView() {
                     whiteSpace: "pre-line",
                   }}
                 >
-                  <strong>{romanticMessage}</strong>
+                  <div className="p-2">
+                    <i style={{ fontSize: "1rem" }}>
+                      Since August 3, 2022, we’ve been lovers. This marks only
+                      the second time in my life that I’ve had a Valentine, but
+                      the 926th day together, which is basically 930, but who's
+                      counting? (Me. I’m counting. Every single one.) Asking you
+                      to be my gf was the best decision of my life only second
+                      to becoming friends with you! <br />
+                      Forever and always, ❤️ <br />
+                      Your Stinky{" "}
+                    </i>
+                  </div>
+
+                  <p className="" style={{ fontSize: "1rem" }}>
+                    {romanticMessage}
+                  </p>
                 </Card.Text>
                 <div>❤️ Brandon & Christel - 14-11-2025 ❤️</div>
                 <div style={{ display: "flex", justifyContent: "center" }}>
