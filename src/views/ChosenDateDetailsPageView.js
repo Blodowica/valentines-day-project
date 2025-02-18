@@ -201,11 +201,11 @@ function ChosenDateDetailsPageView() {
                   <div className="p-2">
                     <i style={{ fontSize: "1rem" }}>
                       Since August 3, 2022, we’ve been lovers. This marks only
-                      the second time in my life that I’ve had a Valentine, but
-                      the 926th day together, which is basically 930, but who's
-                      counting? (Me. I’m counting. Every single one.) Asking you
-                      to be my gf was the best decision of my life only second
-                      to becoming friends with you! <br />
+                      the 3rd time in my life that I’ve had a Valentine, but the
+                      926th day we've been together, which is basically 930, but
+                      who's counting? (Me. I’m counting. Every single one.)
+                      Asking you to be my gf was the best decision of my life
+                      only second to becoming friends with you! <br />
                       Forever and always, ❤️ <br />
                       Your Stinky{" "}
                     </i>
